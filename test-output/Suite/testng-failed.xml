@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.reruntest.WithoutKnownFail"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="org.reruntest.B">
+        <methods>
+          <include name="B2"/>
+        </methods>
+      </class> <!-- org.reruntest.B -->
+      <class name="org.reruntest.A">
+        <methods>
+          <include name="A2"/>
+        </methods>
+      </class> <!-- org.reruntest.A -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
